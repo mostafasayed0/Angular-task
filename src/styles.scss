@@ -345,3 +345,23 @@ button:disabled {
   border: 1px solid var(--border-color);
   border-radius: 12px;
 }
+
+/* Full-viewport auth background (image from /public) */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  background:
+    linear-gradient(160deg, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.45) 50%, rgba(15, 23, 42, 0.78) 100%),
+    url("/pexels-fatih-guney-337108406-18794503.jpg") center / cover no-repeat;
+}
+
+.auth-page .card {
+  width: 100%;
+  max-width: 460px;
+  box-shadow:
+    0 24px 48px -24px rgba(0, 0, 0, 0.45),
+    0 0 0 1px color-mix(in srgb, var(--border-color) 70%, transparent);
+}

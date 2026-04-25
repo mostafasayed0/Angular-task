@@ -9,7 +9,8 @@ import { TranslatePipe } from '../../shared/translate.pipe';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, RouterLink, TranslatePipe],
   template: `
-    <section class="card" style="max-width: 460px; margin: 2rem auto;">
+    <div class="auth-page">
+    <section class="card">
       <h2>{{ 'login' | t }}</h2>
       <form [formGroup]="form" (ngSubmit)="submit()" class="grid">
         <div>
@@ -29,6 +30,7 @@ import { TranslatePipe } from '../../shared/translate.pipe';
       </form>
       <p class="text-muted">No account? <a routerLink="/register">Register</a></p>
     </section>
+    </div>
   `,
 })
 export class LoginComponent {

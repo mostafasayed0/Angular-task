@@ -72,6 +72,13 @@
   padding: 0 1rem 2.2rem;
 }
 
+/* Login / register: full-bleed background inside router outlet */
+.main-container:has(.auth-page) {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 720px) {
   .topbar {
     padding: 0.8rem;
